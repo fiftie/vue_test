@@ -1,16 +1,22 @@
 <template>
   <div id="root">
-    <p>{{ greeting }} World!</p>
-    <p>hello</p>
+    <p>{{ greeting }} 分待ち</p>
   </div>
 </template>
 
 <script>
-module.exports = {
-  data: function () {
+import axios from 'axios'
+export default {
+  data() {
     return {
-      greeting: 'Hello'
+      greeting: '通信中'
     }
+  },
+  created() {
+    axios.get('/getWaitingTime')
+      .then(response => {
+        this.greeting = response.data;
+      })
   }
 }
 </script>
