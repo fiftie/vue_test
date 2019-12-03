@@ -4,7 +4,7 @@
 nodeインストール  
 余裕があるならバージョン管理できるようにしたほうがいい。(macならnvm,winならnvm-windowsなど)  
 nvm-windowsならchocolatey(macでいうhomebrew的なやつ)を使って入れると楽  
-基本的に偶数でかつ、より新しいバージョンを使う。(v8.x.x, v10.x.xなど)  
+nodeのバージョンは基本的に偶数でかつ、より新しいバージョンを使う。(v8.x.x, v10.x.xなど)  
   
 このリポジトリをクローンしたら  
 ```cd vue_test```  
